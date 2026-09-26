@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Python end to end. The event schemas and the docs frontmatter schema are
+# fetched from their owners at pinned tags; nothing here uses Node.
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python reporter.py --check
+      - run: python check_docs.py
