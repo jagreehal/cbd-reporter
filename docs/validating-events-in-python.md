@@ -19,8 +19,8 @@ python3 reporter.py --check
 ## What it reads
 
 `contracts/events/payment.completed.json` from `cbd-payments-service`, at the
-tag pinned in `reporter.py`. It is a JSON Schema
-generated from the Zod schema the producer validates against at runtime. The
+tag pinned in `reporter.py`. The payments build generates this JSON Schema
+from the Zod schema the producer validates against at runtime. The
 same file the EventCatalog build reads, and the same file any Go or JVM
 consumer would read.
 
