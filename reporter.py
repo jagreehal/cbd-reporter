@@ -14,7 +14,7 @@ from urllib.request import urlopen
 from jsonschema import Draft202012Validator
 
 # Upgrading to a new contract is a one-line PR that changes this tag.
-PAYMENTS_CONTRACT = "v1.0.0"
+PAYMENTS_CONTRACT = "v2.0.0-beta.1"
 CONTRACTS = f"https://raw.githubusercontent.com/jagreehal/cbd-payments-service/{PAYMENTS_CONTRACT}/contracts/events"
 # The events this consumer handles. Anything else is reported as unknown.
 EVENTS = ("payment.completed", "payment.failed")
