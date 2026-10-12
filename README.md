@@ -12,6 +12,11 @@ python reporter.py events.ndjson
 python check_docs.py           # our docs follow the convention
 ```
 
+[`autocatalog.consumes.json`](autocatalog.consumes.json) says which payments
+events the reporter reads, and which fields. The company catalog publishes it,
+so a payments pull request names the reporter before it breaks a field the
+reporter reads. The file is plain JSON; nothing here needs Node to keep it.
+
 ## The six repositories
 
 | Repo | Role |
