@@ -1,0 +1,10 @@
+{
+  "consumes": [
+    {
+      "service": "reporter",
+      "event": "payment/payment.completed",
+      "fields": ["type", "payment.amount", "payment.currency"]
+    },
+    { "service": "reporter", "event": "payment/payment.failed", "fields": ["type"] }
+  ]
+}
