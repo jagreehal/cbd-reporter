@@ -21,7 +21,7 @@ python3 reporter.py --check
 `contracts/events/payment.completed.json` from `cbd-payments-service`, at the
 tag pinned in `reporter.py`. The payments build generates this JSON Schema
 from the Zod schema the producer validates against at runtime. The
-same file the EventCatalog build reads, and the same file any Go or JVM
+same file the catalog build reads, and the same file any Go or JVM
 consumer would read.
 
 Every record is validated before it is counted. An invalid record is reported,

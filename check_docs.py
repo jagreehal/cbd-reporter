@@ -27,8 +27,8 @@ REPO = Path(__file__).resolve().parent
 # The convention version this repo follows. Bumped by PR, like any contract.
 HANDBOOK = "v1.0.0"
 SCHEMA = f"https://raw.githubusercontent.com/jagreehal/cbd-handbook/{HANDBOOK}/contracts/docs-frontmatter.json"
-# Published by cbd-docs-site on its last run.
-MANIFEST = "https://jagreehal.github.io/cbd-docs-site/contracts/docs-manifest.json"
+# Published by cbd-catalog on its last run.
+MANIFEST = "https://jagreehal.github.io/cbd-catalog/contracts/docs-manifest.json"
 
 FRONTMATTER = re.compile(r"^---\n(.*?)\n---\n", re.S)
 FENCED = re.compile(r"^```.*?^```", re.M | re.S)

@@ -25,10 +25,10 @@ reporter reads. The file is plain JSON; nothing here needs Node to keep it.
 | [cbd-payments-service](https://github.com/jagreehal/cbd-payments-service) | TypeScript producer: OpenAPI, event JSON Schemas, runbook |
 | [cbd-dashboard](https://github.com/jagreehal/cbd-dashboard) | TypeScript consumer: generates a typed client from the pinned OpenAPI |
 | [cbd-reporter](https://github.com/jagreehal/cbd-reporter) | Python consumer: validates events against the pinned JSON Schemas |
-| [cbd-docs-site](https://github.com/jagreehal/cbd-docs-site) | Aggregator: [docs index](https://jagreehal.github.io/cbd-docs-site/) over the enrolled repos |
-| [cbd-catalog](https://github.com/jagreehal/cbd-catalog) | Aggregator: [EventCatalog](https://jagreehal.github.io/cbd-catalog/) over the enrolled repos |
+| [cbd-docs-site](https://github.com/jagreehal/cbd-docs-site) | Retired: redirects to cbd-catalog |
+| [cbd-catalog](https://github.com/jagreehal/cbd-catalog) | Aggregator: [the one site](https://jagreehal.github.io/cbd-catalog/) over the enrolled repos: docs index, `llms.txt`, docs manifest, `catalog.json` |
 
 Consumers fetch committed artifacts over HTTPS at a pinned tag. The
-aggregators find publishers by the `cbd-publisher` GitHub topic.
+aggregator finds publishers by the `cbd-publisher` GitHub topic.
 
 The pattern and the argument behind it: [convention-based-design](https://github.com/jagreehal/convention-based-design).
